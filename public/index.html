@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="loginContainer">
+      <form id="loginForm" action="chat.html" method = "GET">
+        <label for="loginForm"> What is your nickname? </label>
+        <input
+          name="name"
+          type="text"
+          id="loginInput"
+          autocomplete="off"
+          placeholder="nickname"
+          required
+        />
+        <label for="loginForm">What room do you want to join?
+        </label>
+        <select name="room" id = "selectRoom">
+							<option value="room1">room1</option>
+							<option value="room2">room2</option>
+							<option value="room3">room3</option>
+							<option value="room4">room4</option>
+							<option value="room5">room5</option>
+        </select>
+
+        <button formaction="chat.html">join</button>
+      </form>
+    </div>
+
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  </body>
+</html>
